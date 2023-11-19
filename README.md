@@ -1,13 +1,38 @@
-# CSF101_pygame
-Here's a simple description of what this code does:
+# WORMY!
 
-    It imports necessary libraries, including random, pygame, and sys.
-    It defines some constants like the game window's size, cell size, colors, and directions.
-    It sets up the game window, initializes fonts, and displays the start screen with a rotating title.
-    The runGame function handles the main game loop. It allows the player to control a "worm" using arrow keys or WASD keys to collect apples.
-    The worm grows longer when it consumes an apple, and the game ends if the worm collides with the game boundaries or itself.
-    The showGameOverScreen function displays a "Game Over" message when the game ends.
-    The terminate function quits the game when necessary.
-    The drawGrid, drawWorm, drawApple, and drawScore functions are responsible for drawing the game elements on the screen.
-    The game logic is mainly within the runGame function, where the worm's movements, collisions, and apple consumption are handled.
-    The main game loop runs continuously until the player decides to quit or the game ends.
+This project is a Python-based application that includes two classes: `ScoringSystem` and `Worm`. 
+
+## ScoringSystem
+
+The `ScoringSystem` class is designed to keep track of a user's score. It has two methods:
+
+- `correct_answer()`: This method increases the score by 1 each time it is called.
+- `get_score()`: This method returns the current score.
+
+## Worm
+
+The `Worm` class simulates a worm moving in a 2D space. It has four methods:
+
+- `move_up()`: This method moves the worm up by one unit.
+- `move_down()`: This method moves the worm down by one unit.
+- `move_left()`: This method moves the worm left by one unit.
+- `move_right()`: This method moves the worm right by one unit.
+
+## Testing
+
+The project includes unit tests for both classes using Python's built-in `unittest` module. The tests ensure that the methods in both classes are working as expected.
+
+## Installation
+
+To run this project, you need to have Python installed on your machine. You can then clone the repository and run the Python files.
+
+## Usage
+
+To use the `ScoringSystem` class, create an instance of the class and call the `correct_answer()` method to increase the score. You can then call the `get_score()` method to get the current score.
+
+To use the `Worm` class, create an instance of the class and call the `move_up()`, `move_down()`, `move_left()`, or `move_right()` methods to move the worm in the respective direction.
+
+## Contributing
+
+Contributions are welcome. Please feel free to submit a pull request.
+
